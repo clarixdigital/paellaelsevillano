@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // Sitio 100 % estático: se sube la carpeta "out" que genera `next build` (output: 'export').
+  // No hay "main" (sin Worker/servidor), por eso Cloudflare no necesita OpenNext.
+  "name": "paella-el-sevillano",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./out"
+  }
+}
