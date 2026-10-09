@@ -24,10 +24,15 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="es-MX">
+    <html lang="es-MX" suppressHydrationWarning>
       <head>
-        {/* Marca que hay JavaScript para activar las animaciones de aparición */}
-        <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />
+        {/* Marca que hay JavaScript (animaciones) y aplica el tema guardado antes de pintar */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "document.documentElement.classList.add('js');try{if(localStorage.getItem('theme')==='light')document.documentElement.dataset.theme='light'}catch(e){}",
+          }}
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link

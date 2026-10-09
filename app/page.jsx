@@ -255,21 +255,21 @@ export default function Home() {
             <span className="wordmark"><b>EL SEVILLANO</b><small>{SITE.tagline}</small></span>
           </a>
           <div className="social">
-            <a href={SITE.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.8">
+            <a className="ig" href={SITE.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                 <rect x="3" y="3" width="18" height="18" rx="5" />
                 <circle cx="12" cy="12" r="4.2" />
                 <circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none" />
               </svg>
             </a>
-            <a href={`https://wa.me/${SITE.whatsappNumber}`} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <a className="wa" href={`https://wa.me/${SITE.whatsappNumber}`} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
                 <path d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.77.46 3.45 1.27 4.9L2 22l5.25-1.38A9.96 9.96 0 0 0 12.04 22c5.52 0 10-4.48 10-10s-4.48-10-10-10Zm0 18.2c-1.6 0-3.1-.44-4.38-1.21l-.31-.18-2.91.76.78-2.84-.2-.3a8.17 8.17 0 0 1-1.28-4.43c0-4.53 3.68-8.21 8.3-8.21 4.42 0 8.01 3.68 8.01 8.21 0 4.53-3.68 8.2-8.01 8.2Zm4.52-6.14c-.25-.12-1.47-.72-1.7-.8-.23-.08-.39-.12-.56.12-.17.25-.64.8-.78.97-.15.16-.29.18-.54.06-1.47-.73-2.43-1.3-3.4-2.95-.26-.44.26-.41.73-1.36.08-.17.04-.3-.04-.42-.08-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.42-.14-.01-.31-.01-.48-.01-.17 0-.44.06-.68.31-.23.25-.9.88-.9 2.14 0 1.26.92 2.48 1.05 2.65.12.17 1.72 2.63 4.17 3.58 2.07.8 2.49.65 2.94.6.45-.04 1.47-.6 1.68-1.18.2-.58.2-1.08.14-1.18-.06-.1-.25-.17-.5-.3Z" />
               </svg>
             </a>
-            <a href={SITE.phoneHref} aria-label="Teléfono">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                <path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.5 2.5.8 3.9.9.6 0 1 .5 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.1c.6 0 1 .4 1 1 .1 1.4.4 2.7.9 3.9.1.4.1.8-.2 1l-2.2 2.2Z" />
+            <a className="tel" href={SITE.phoneHref} aria-label="Teléfono">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2Z" />
               </svg>
             </a>
           </div>
